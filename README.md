@@ -122,3 +122,20 @@ The stipulated commands below helps to execute out docker compose function
 ```sh
 docker-compose up -d --build
 ```
+## Few things to take note of in the docker-compose.yaml file
+
+Docker compose is going to **cd** into both my frontend/backend directory to build each **Dockerfile** therein, and also it will pull the following container images from **DockerHub** 
+
+1. Nginx-proxy-manager (This is a user-friendly interface for managing Nginx proxy hosts.)
+2. Postgres (This will make use of our backend/.env file configuration)
+3. Adminer (This is a lightweight database management tool.)
+
+**While our docker compose build has successfully finished running, browse the following web address on your web browser for local development test of your web application running locally.
+
+```sh
+localhost
+localhost:8080
+localhost:8000/api
+localhost:8000/docs
+localhost:8000/redoc
+```
