@@ -115,7 +115,7 @@ sudo usermod -aG docker ubuntu
 
 Each frontend/backend directory has its own **Dockerfile**
 
-Also, have written a docker-compose.yaml file which will help in building the process of streamline building of docker images and also containerizing them just all at one stop shop. The docker-compose.yml is at the root of our project directory
+Also, have written a docker-compose.yaml file which will help in building the process to streamline build of docker images and also containerizing them just all at one stop shop. The docker-compose.yml is at the root of our project directory
 
 The stipulated commands below helps to execute out docker compose function
 
