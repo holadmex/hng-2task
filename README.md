@@ -19,7 +19,7 @@ To get started with this template, please follow the instructions in the respect
 - [Backend README](./backend/README.md)
 
 
-## Local Development test for Full Stack Web Application.
+## Setting Up Local Development Test.
 
 
 clone the project repository on your local environment 
