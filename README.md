@@ -19,7 +19,7 @@ To get started with this template, please follow the instructions in the respect
 - [Backend README](./backend/README.md)
 
 
-Local Development test for Full Stack Web Application.
+## Local Development test for Full Stack Web Application.
 
 
 clone the project repository on your local environment 
@@ -101,7 +101,7 @@ Add Poetry to your PATH (if not automatically added):
 
 On implementing all of the above steps, you should have your frontend/backend-database application running locally.
 
-Now, we'll be moving to containerization of our local development locally
+## Now, we'll be moving to containerization of our local development locally
 
 **Prerequisite Installation**
 
@@ -122,4 +122,3 @@ The stipulated commands below helps to execute out docker compose function
 ```sh
 docker-compose up -d --build
 ```
-
