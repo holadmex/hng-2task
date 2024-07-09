@@ -18,3 +18,108 @@ To get started with this template, please follow the instructions in the respect
 - [Frontend README](./frontend/README.md)
 - [Backend README](./backend/README.md)
 
+
+Local Development test for Full Stack Web Application.
+
+
+clone the project repository on your local environment 
+
+```sh
+git clone https://github.com/holadmex/hng-2task.git
+
+```
+
+## Prerequisites installation in running your frontend
+
+- Node.js (version > 14)
+
+## Setup Instructions
+
+1. **Navigate to the frontend directory**:
+    ```sh
+    cd frontend
+    ```
+
+2. **Install dependencies**:
+    ```sh
+    npm install
+    ```
+
+3. **Run the development server**:
+    ```sh
+    npm run dev
+    ```
+
+
+## Prerequisites installation in running your backend
+
+- Python 3.8 or higher
+- Poetry (for dependency management)
+- PostgreSQL (ensure the database server is running)
+
+### Installing Poetry
+
+To install Poetry, follow these steps:
+
+```sh
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Add Poetry to your PATH (if not automatically added):
+
+## Setup Instructions
+
+1. **Navigate to the backend directory**:
+    ```sh
+    cd backend
+    ```
+
+2. **Install dependencies using Poetry**:
+    ```sh
+    poetry install
+    ```
+
+3. **After your PostgreSQL installation**
+   **Run the following commands**
+   ```sh
+   sudo -u postgres psql
+   CREATE DATABASE app;
+   CREATE USER app WITH ENCRYPTED PASSWORD 'changethis123';
+   GRANT ALL PRIVILEGES ON DATABASE app TO app;
+   psql -h localhost -U app -d app
+   
+
+4. **Set up the database with the necessary tables**:
+    ```sh
+    poetry run bash ./prestart.sh
+    ```
+
+5. **Run the backend server**:
+    ```sh
+    poetry run uvicorn app.main:app --reload
+    ```
+
+On implementing all of the above steps, you should have your frontend/backend-database application running locally.
+
+Now, we'll be moving to containerization of our local development locally
+
+**Prerequisite Installation**
+
+1. Docker
+2. Docker Compose
+
+#After installing Docker, add ubuntu user to docker group
+```sh
+sudo usermod -aG docker ubuntu
+```
+
+Each frontend/backend directory has its own **Dockerfile**
+
+Also, have written a docker-compose.yml file which will help in building the process of stream lining building of docker images and also containerizing them just all at one stop shop. The docker-compose.yml is at the root of our project directory
+
+The stipulated commands below helps to execute out docker compose function
+
+```sh
+docker-compose up -d --build
+```
+
