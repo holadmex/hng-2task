@@ -105,7 +105,7 @@ On implementing all of the above steps, you should have your frontend/backend-da
 
 **Prerequisite Installation**
 
-1. Docker
+1. Docker Engine (Linux) Docker Desktop (Windows)
 2. Docker Compose
 
 #After installing Docker, add ubuntu user to docker group
