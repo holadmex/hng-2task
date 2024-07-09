@@ -115,22 +115,22 @@ sudo usermod -aG docker ubuntu
 
 Each frontend/backend directory has its own **Dockerfile**
 
-Also, have written a docker-compose.yaml file which will help in building the process to streamline build of docker images and also containerizing them just all at one stop shop. The docker-compose.yml is at the root of our project directory
+Also, have written a docker-compose.yaml file which will help in building the process to streamline build of docker images and also containerizing them all, just as one stop shop lol. The docker-compose.yaml is at the root of our project directory.
 
-The stipulated commands below helps to execute out docker compose function
+The stipulated command below helps to execute out docker compose function
 
 ```sh
 docker-compose up -d --build
 ```
 ## Few things to take note of in the docker-compose.yaml file
 
-Docker compose is going to **cd** into both my frontend/backend directory to build each **Dockerfile** therein, and also it will pull the following container images from **DockerHub** 
+Docker compose is going to **cd** into both the frontend/backend directory to build each **Dockerfile** therein, and also it will pull the following containers images from **DockerHub** 
 
 1. Nginx-proxy-manager (This is a user-friendly interface for managing Nginx proxy hosts.)
 2. Postgres (This will make use of our backend/.env file configuration)
 3. Adminer (This is a lightweight database management tool.)
 
-**While our docker compose build has successfully finished running, browse the following web address on your web browser for local development test of your web application running locally.
+**While our docker compose build has successfully finished running, browse the following web address on your web browser for local development test of your web application running locally.**
 
 ```sh
 localhost
