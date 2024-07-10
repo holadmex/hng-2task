@@ -1,5 +1,0 @@
-[09/Jul/2024:08:52:15 +0000] 200 - GET http vpro.holadmexbob.online "/" [Client 102.88.71.130] [Length 568] [Gzip 1.86] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "-"
-[09/Jul/2024:08:57:49 +0000] 400 - - http localhost-nginx-proxy-manager "-" [Client 139.162.141.82] [Length 154] [Gzip -] "-" "-"
-[09/Jul/2024:08:57:49 +0000] 400 - - http localhost-nginx-proxy-manager "-" [Client 209.38.208.202] [Length 154] [Gzip -] "-" "-"
-[09/Jul/2024:09:01:45 +0000] 400 - - http localhost-nginx-proxy-manager "-" [Client 139.59.136.184] [Length 154] [Gzip -] "-" "-"
-[09/Jul/2024:09:05:41 +0000] 400 - - http localhost-nginx-proxy-manager "-" [Client 159.89.17.243] [Length 154] [Gzip -] "-" "-"
